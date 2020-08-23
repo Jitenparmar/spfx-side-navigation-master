@@ -6,13 +6,6 @@ npm-debug.log*
 # Dependency directories
 node_modules
 
-# Build generated files
-dist
-lib
-solution
-temp
-*.sppkg
-
 # Coverage directory used by tools like istanbul
 coverage
 
