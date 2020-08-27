@@ -54,7 +54,7 @@ export default class SideNav extends React.Component<
       <div
         className={`site-menu-panel ms-slideRightIn40 visible-i`}
         style={{
-          visibility: "hidden"
+          visibility: "hidden",marginTop:"88px"
         }} /* set to hidden then onces css loads it will be visible */
       >
         <div className={siteMenuClass}>

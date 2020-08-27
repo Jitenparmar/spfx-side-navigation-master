@@ -10,7 +10,7 @@ export default class SideNavProvider implements ISideNavProvider {
       .orderBy("Title").usingCaching().get()
       .then(
         (items: ISPSideNavItem[]): ISideNavItem[] => {
-
+          debugger;
           const siteNavItems: ISideNavItem[] = [];
 
           if (this.existsItemsInShortcuts(items, 'Page')) {
@@ -177,7 +177,7 @@ export default class SideNavProvider implements ISideNavProvider {
     spNavItems.forEach(
       (item: ISPSideNavItem): void => {
         if (item.LinkType === filter) {
-          subNavItems.push({ title: item.Title, url: item.Link, openInNewWindow: false });
+          subNavItems.push({ title: item.Title, url: item.Link["Url"], openInNewWindow: false });
         }
       }
     );
